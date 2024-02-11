@@ -1,17 +1,19 @@
 import java.util.*;
-class sum{
-    public static int ArrSum(int[]arr,int N){
+
+class sum {
+    public static int ArrSum(int[] arr, int N) {
         int sum = 0;
-        for(int i=0;i<N;i++){
-            sum=sum+arr[i];
+        for (int i = 0; i < N; i++) {
+            sum = sum + arr[i];
         }
         return sum;
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         int[] arr = new int[N];
-        for(int i=0;i<N;i++){
+        for (int i = 0; i < N; i++) {
             arr[i] = sc.nextInt();
         }
         System.out.println(ArrSum(arr, N));
